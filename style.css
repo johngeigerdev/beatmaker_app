@@ -26,16 +26,16 @@ svg {
     background: rgb(185, 62, 175);
 }
 .hihat-pad{
-    background: rgb(228, 231, 7);
+    background: rgb(231, 139, 33);
 }
 .kick-pad.active{
     background: rgb(46, 219, 196);
 }
 .snare-pad.active{
-    background: rgb(162, 45, 230);
+    background: rgb(21, 199, 30);
 }
 .hihat-pad.active{
-    background: rgb(231, 139, 33);
+    background: rgb(217, 233, 78);
 }
 .hihat-track,
 .snare-track,
@@ -77,7 +77,7 @@ svg {
 .pad{
     transition: all 0.5s ease;
 }
-.play{
+.play {
     padding: 1rem 2rem;
     margin-top: 3rem;
     font-size: 1.5rem;
@@ -86,8 +86,16 @@ svg {
     border: none;
     cursor: pointer;
 }
-select{
+select {
     padding: 1rem;
     font-size: 1rem;
     margin-left: 1rem;
+}
+@keyframes playTrack {
+    from {
+        tranform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }
