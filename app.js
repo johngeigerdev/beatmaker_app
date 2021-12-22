@@ -17,6 +17,22 @@ class DrumKit {
         //Loop over the pads
         activeBars.forEach(bar => {
             bar.style.animation = `playTrack 0.3s alternate ease-in-out 2`;
+            //Check if pads are active
+            if(bar.classList.contains('active')) {
+                //check which type of pad is active, snarepad, hihit pad or kick pad?
+                if(bar.classList.contains('kick-pad')) {
+                    this.kickAudio.currentTime = 0;
+                    this.kickAudio.play();
+                }
+                if(bar.classList.contains('snare-pad')) {
+                    this.kickAudio.currentTime = 0;
+                    this.snareAudio.play();
+                }
+                if(bar.classList.contains('hihat-pad')) {
+                    this.kickAudio.currentTime = 0;
+                    this.hihatAudio.play();
+                }
+            }
         })
         this.index++;
     }
