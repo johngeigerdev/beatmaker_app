@@ -11,6 +11,25 @@ i,
 svg {
     pointer-events: none;
 }
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.intro h1 {
+    text-decoration: underline;
+    color: rgb(231, 134, 7);
+    font-weight: bold;
+}
+h1 {
+    padding: 1rem;
+}
+p {
+    font-size: 25px;
+    text-align: center;
+    color: rgba(50, 175, 12, 0.973);
+}
 .kick-pad,
 .snare-pad,
 .hihat-pad {
@@ -19,22 +38,22 @@ svg {
     margin: 1rem 0.5rem;
     cursor: pointer;
 }
-.kick-pad{
+.kick-pad {
     background: rgb(62, 62, 218);
 }
-.snare-pad{
+.snare-pad {
     background: rgb(185, 62, 175);
 }
-.hihat-pad{
+.hihat-pad {
     background: rgb(231, 139, 33);
 }
-.kick-pad.active{
+.kick-pad.active {
     background: rgb(46, 219, 196);
 }
-.snare-pad.active{
+.snare-pad.active {
     background: rgb(21, 199, 30);
 }
-.hihat-pad.active{
+.hihat-pad.active {
     background: rgb(217, 233, 78);
 }
 .hihat-track,
@@ -51,21 +70,21 @@ svg {
 .hihat {
     display: flex;
 }
-.sequencer{
+.sequencer {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.controls{
+.controls {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex: 1;
     margin: 0rem 2rem;
 }
-.controls button{
+.controls button {
     padding: 1rem;
     border: none;
     background:rgb(88, 88, 88);
@@ -74,7 +93,7 @@ svg {
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.pad{
+.pad {
     transition: all 0.5s ease;
 }
 .play {
